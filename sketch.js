@@ -8,7 +8,7 @@ var engine, world;
 var holder,ball,ground;
 var stand1,stand2;
 var ball;
-var slingShot;
+var slingshot;
 var polygon_img;
 
 function preload(){
@@ -147,11 +147,11 @@ function mouseDragged(){
 }
 
 function mouseReleased(){
-  slingShot.fly();
+  slingshot.fly();
 }
 
 function keyPressed(){
   if(keyCode === 32){
-      slingShot.attach(this.ball);
+      slingshot.attach(this.ball);
   }
 }
